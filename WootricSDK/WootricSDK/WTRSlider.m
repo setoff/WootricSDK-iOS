@@ -47,6 +47,8 @@
     _settings = settings;
     _sliderColor = color;
     _currentValue = -1;
+
+    self.semanticContentAttribute = UISemanticContentAttributeForceLeftToRight;
     
     self.minimumValue = [_settings minimumScore];
     self.maximumValue = [_settings maximumScore];
