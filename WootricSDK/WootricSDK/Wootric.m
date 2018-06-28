@@ -108,6 +108,11 @@
   apiClient.settings.showOptOut = flag;
 }
 
++ (void)customOptOutTitle:(NSString *)title {
+    WTRApiClient *apiClient = [WTRApiClient sharedInstance];
+    apiClient.settings.optOutTitle = title;
+}
+
 + (void)surveyImmediately:(BOOL)flag {
   WTRApiClient *apiClient = [WTRApiClient sharedInstance];
   apiClient.settings.surveyImmediately = flag;

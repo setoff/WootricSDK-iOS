@@ -54,6 +54,7 @@
     _surveyType = @"NPS";
     _scale = [self scoreRules][_surveyType][0];
     _showOptOut = NO;
+    _optOutTitle = @"opt out";
   }
     
   return self;

@@ -272,6 +272,11 @@
  */
 + (void)showOptOut:(BOOL)flag;
 /**
+ @discussion Sets custom title for opt-out button. Doesn't take affect if showOptOut setted to NO. See showOptOut:
+ @param title A string with custom button title.
+ */
++ (void)customOptOutTitle:(NSString *)title;
+/**
  @discussion Notification posted when the survey view is about to be presented.
  */
 + (NSNotificationName)surveyWillAppearNotification;

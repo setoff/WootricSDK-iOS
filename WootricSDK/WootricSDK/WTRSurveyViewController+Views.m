@@ -111,7 +111,7 @@ static NSString *const kPoweredByWootric = @"Powered by Wootric";
 - (void)setupOptOut {
   self.optOutButton = [[UIButton alloc] init];
   [self.optOutButton setTranslatesAutoresizingMaskIntoConstraints:NO];
-  [self.optOutButton setTitle:@"opt out" forState:UIControlStateNormal];
+  [self.optOutButton setTitle:self.settings.optOutTitle forState:UIControlStateNormal];
   [self.optOutButton setTitleColor:[WTRColor optOutTextColor] forState:UIControlStateNormal];
   [self.optOutButton.titleLabel setFont:[UIFont systemFontOfSize:10]];
   [self.optOutButton addTarget:self
